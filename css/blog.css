@@ -1,0 +1,175 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('image/mr-robot.jpg');
+    background-size: cover;
+    background-position:center;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 6%;
+}
+nav img{
+    width: 80px;
+}
+.link ul{
+    display: flex;
+
+}
+.link ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 8px 12px;
+    font-size: 20px;
+}
+.link ul li a{
+    text-decoration: none;
+    color: white;
+}
+.link ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: white;
+    display: block;
+    margin: auto;
+    transition: 0.2s;
+}
+.link ul li:hover::after{
+    width: 100%;
+}
+
+nav .bi{
+    display: none;
+}
+@media(max-width:700px){
+    .text-box h1{
+        font-size: 40px;
+    }
+    .link ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .link{
+        background-color:rgb(240, 240, 240);
+        color: black;
+        right: -200px;
+        height: 100vh;
+        width: 200px;
+        position: fixed;
+        top:0;
+        text-align: left;
+        z-index:1 ;
+        transition: ease-in .3s;
+    }
+    .link ul li a{
+        color: black;
+    }
+    nav .bi{
+        display:block ;
+        font-size: 40px;
+        cursor: pointer;
+        color: white;
+    }
+}
+nav{
+    background-color: black;
+    max-height: 15vh;
+}
+.blog{
+    width: 100%;
+    height: 70vh;
+    /* background: #0F2027;  fallback for old browsers */
+/* background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  Chrome 10-25, Safari 5.1-6 */
+/* background: linear-gradient(to right, #2C5364, #203A43, #0F2027); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: url('/image/wp1810656-mr-robot-wallpapers.png');
+background-size:cover;
+background-position: center;
+
+}
+.heading-blog{
+    color: white;
+    height: 50px;
+    text-align: center;
+    position: relative;
+    bottom: -11px;
+}
+.row{
+    display: flex;
+}
+.col{
+    background-color: transparent;
+    border: 2px solid white;
+    height: 45vh;
+    margin: 10px 20px;
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+}
+.col:hover{
+    background-color: white;
+    color: black;
+    transition: ease-in .4s;
+    cursor: pointer;
+}
+.col h{
+    font-size: larger
+}
+.col p{
+    font-size: medium
+}
+@media (max-width:700px){
+    .blog .row{
+        flex-direction: column;
+    }
+    .blog{
+        height: auto;
+    }
+}
+.footer{
+    background-color: black;
+    border-top: 2px dotted white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    position: relative;
+    /* top: 380px; */
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    /* background: url("image/footer.jpg"); */
+    color: white;
+    background-size:cover;
+    background-position: center;
+    box-shadow: -5px -31px 53px -10px rgba(46,36,36,1);
+-webkit-box-shadow: -5px -31px 53px -10px rgba(46,36,36,1);
+-moz-box-shadow: -5px -31px 53px -10px rgba(46,36,36,1);
+}
+.copy-right{
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 25px;
+}
+.social-media{
+    margin-right: 20px;
+    margin-top: 7px;
+}
+.gap-fb{
+    margin-left: 70px;
+}
+@media (max-width:700px)
+{
+    .footer{
+        height: 30vh;
+    }
+    .gap-fb{
+        margin-left: 20px;
+    }
+}

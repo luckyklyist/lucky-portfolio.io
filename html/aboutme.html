@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">    <title>Lucky Portfolio</title>
+    <title>About me</title>
+</head>
+<body>
+    <!-- navbar -->
+    <nav>
+
+        <a href="index.html"><img src="/image/LUCKy klyist(1).png" alt=""></a> 
+
+     <div class="link" id="navlink">
+         <i class="bi bi-x" onclick="hidemenu()"></i>
+         <ul>
+             <li><a href="index.html">Home</a></li>
+             <li><a href="https://luckyklyist.blogspot.com/" target="_blank">Blog</a></li>
+             <li><a href="contact.html">Contact</a></li>
+             <li><a href="aboutme.html">About</a></li>
+             <li><a href="projects.html">Projects</a></li>
+             
+         </ul>
+     </div>
+     <i class="bi bi-list" onclick="showmenu()"></i>
+ </nav>
+<!-- about -->
+<!-- About me  -->
+<div class="aboutme">
+    <h1>Who i am</h1>
+    <P>Hey my name is Anupam .I live in Nepal .From my childhood i love to play with computers.I have knowledge in technologies like HTML,css,javascript(Basic),python,django and C .I created many front-end project and now currently doing backends with Django.</P>
+
+</div>
+ <!-- footer -->
+  <!-- footer -->
+  <div class="footer">
+    <div class="copy-right">
+        Copyright &copy Luckyklyist 2022.All right reserved.
+    </div>
+    <div class="social-media">
+        <h1>Connect with me</h1>
+        <i class="gap-fb bi bi-facebook"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-twitter"></i>
+        <i class="bi bi-linkedin"></i>
+    </div>
+</div>
+<script>
+    let navlink=document.getElementById("navlink");
+    // let aboutme=document.getElementById("about");
+    let textbox=document.getElementById("text");
+    function hidemenu()
+    {
+        navlink.style.right="-200px";
+    }
+    function showmenu()
+    {
+        navlink.style.right="0";
+    }
+</script>
+</body>
+</html>
